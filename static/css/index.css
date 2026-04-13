@@ -1,0 +1,158 @@
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic typography and layout */
+body {
+  color: #000 !important;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.cover-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.full-cover-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content positioning */
+.content-wrapper {
+  position: relative;
+  background: #fff;
+  z-index: 10;
+}
+
+/* Override Bulma section spacing */
+.section {
+  padding: 0 !important;
+}
+
+.section.is-light {
+  background: #fff;
+  margin: 0;
+  padding-bottom: 60px !important;
+}
+
+/* Add spacing between paragraphs and sections in the content */
+.content p {
+  margin-bottom: 1.5rem !important;
+}
+
+.container.is-max-desktop>h2.subtitle {
+  margin-top: 3.5rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.container.is-max-desktop>.columns {
+  margin-bottom: 2rem !important;
+}
+
+.container.is-max-desktop>.content {
+  margin-bottom: 3.5rem !important;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.gradient-colorful {
+  background: linear-gradient(45deg, #FF4500, #FFA500, #00CED1, #4169E1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.publication-authors {
+  margin: 10px 0;
+}
+
+.author-block {
+  margin: 0 5px;
+}
+
+.link-block {
+  margin: 10px;
+}
+
+/* Video containers */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+  transform: translateY(-5px);
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.sub-sub-title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container.is-max-desktop {
+  max-width: 960px !important;
+}
+
+.container.is-width-screen {
+  max-width: 1140px !important;
+}
+
+.anonymity {
+  display: none;
+}
+
+.columns {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+}
